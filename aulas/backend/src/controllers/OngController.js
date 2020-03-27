@@ -5,7 +5,7 @@ module.exports={
 
     async index(req,res){
         const ongs=await connection('ongs').select('*')
-    
+        
         return res.json(ongs)
     },
 
